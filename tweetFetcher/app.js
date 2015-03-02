@@ -149,6 +149,7 @@ function parseTweets(sourceTweets, callback) {
             parsed.text_length = parsed.text.length;
             parsed.hashtag = sT.hashtag;
             parsed.words = parsed.text.split(' ');
+            parsed.word_count = parsed.words.length;
             parsed.chars = [];
             for (var k = 0; k < parsed.words.length; k++) {
                 parsed.chars.push(parsed.words[k].length);
