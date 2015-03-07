@@ -50,18 +50,19 @@ var client = new Twitter({
  
 
 var hashtags = [
-    '#geometry', 
-    '#GSD', 
-    '#patriots', 
-    '#foo', 
-    '#bar', 
-    '#harvard',
-    '#robotics',
-    '#javascript',
-    '#kitty',
-    '#obama',
-    '#boston',
-    '#nyc'],
+    '#whatever', 
+    '#system', 
+    '#control', 
+    '#radical', 
+    '#surface', 
+    '#cigarette',
+    '#pink',
+    '#raw',
+    // '#passages',
+    '#geometry',
+    '#abstract',
+    '#kindergarten',
+    '#superficial'],
     tweetCount = 100;
 
 var sourceTweets = [],
@@ -146,14 +147,16 @@ function parseTweets(sourceTweets, callback) {
             var parsed = {};
             parsed.id = raw.id;
             parsed.text = raw.text;
-            parsed.text_length = parsed.text.length;
+            // parsed.text_length = parsed.text.length;
             parsed.hashtag = sT.hashtag;
-            parsed.words = parsed.text.split(' ');
-            parsed.word_count = parsed.words.length;
-            parsed.chars = [];
-            for (var k = 0; k < parsed.words.length; k++) {
-                parsed.chars.push(parsed.words[k].length);
-            }
+            parsed.hashtag_count = raw.entities.hashtags.length;
+
+            // parsed.words = parsed.text.split(' ');
+            // parsed.word_count = parsed.words.length;
+            // parsed.chars = [];
+            // for (var k = 0; k < parsed.words.length; k++) {
+            //     parsed.chars.push(parsed.words[k].length);
+            // }
             pT.tweets.push(parsed);
         }
         parsedTweets.push(pT);
