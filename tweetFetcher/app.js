@@ -49,24 +49,39 @@ var client = new Twitter({
 });
  
 
-var hashtags = [
-    '#whatever', 
-    '#system', 
-    '#control', 
-    '#radical', 
-    '#surface', 
-    '#cigarette',
-    '#pink',
-    '#raw',
-    '#passage',
-    // '#passages',
-    // '#geometry',
-    '#abstract',
-    '#kindergarten',
-    '#superficial'],
-    tweetCount = 100;
+// var hashtags = [
+//     '#whatever', 
+//     '#system', 
+//     '#control', 
+//     '#radical', 
+//     '#surface', 
+//     '#cigarette',
+//     '#pink',
+//     '#raw',
+//     '#passage',
+//     // '#passages',
+//     // '#geometry',
+//     '#abstract',
+//     '#kindergarten',
+//     '#superficial'];
 
-var sourceTweets = [],
+var hashtags = [
+    '#miami',
+    '#designmiami',
+    '#basel',
+    '#design',
+    '#fair',
+    '#art',
+    '#furniture',
+    '#gsd',
+    '#architecture',
+    '#data',
+    '#artbasel',
+    '#miamipavillion' 
+];
+
+var tweetCount = 100,
+    sourceTweets = [],
     parsedTweets = [];
 
 fetchTweets();
