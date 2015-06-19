@@ -1,5 +1,7 @@
 # Twipology
 
+![Twipology exhibition](https://github.com/garciadelcastillo/TWIPOLOGY/blob/master/twipology_featured.jpg "Twipology exhibition")
+
 **Twipology** is a garden generated from Twitter conversations. Visitors are welcome to walk, sit, dance, rest, contemplate, spend hours or days in the space.
 
 This repository contains two main scripts:
@@ -11,4 +13,4 @@ More information about Twipology can be found at [http://garciadelcastillo.es/po
 
 Acknowledgments
 ---------------
-**Twipology** is an installation creted by Jöelle Bitton, with the help of Kevin Hinz and myself. 
+**Twipology** is an installation creted by [Jöelle Bitton](http://joelle.superficiel.org/), with the help of [Kevin Hinz](https://www.linkedin.com/pub/kevin-hinz/11/a5/753) and [myself](http://garciadelcastillo.es/). 
